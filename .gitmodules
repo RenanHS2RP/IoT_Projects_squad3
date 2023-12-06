@@ -1,0 +1,9 @@
+[submodule "Código/BACK/FlowAPIProject"]
+	path = Código/BACK/FlowAPIProject
+	url = https://github.com/RenanHS2RP/FlowAPIProject.git
+[submodule "Código/APP/flow_app_mobile"]
+	path = Código/APP/flow_app_mobile
+	url = https://github.com/AnaJuliaMM/flow_app_mobile.git
+[submodule "Código/BACK/window_api"]
+	path = Código/BACK/window_api
+	url = https://github.com/RafaelRodrigues44/window_api.git
