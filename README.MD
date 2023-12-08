@@ -21,10 +21,7 @@ Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SE
 - ### [Sensor de Combustível](https://github.com/seu-usuario/sua-repo)
     - *Descrição do Projeto:*
         - O projeto "Sensor de Combustível" tem como finalidade considerar o preço pago e a quantidade de combustível emitido pela bomba, comparando com o que foi realmente recebido e o preço correto de acordo com o posto.
-        - O preço e a quantidade emitida pela bomba serão informados pelo cliente, mas o sensor enviará a quantidade correta de combustível. A API calculará e enviará o valor correto para o aplicativo mobile.
-
-## Capturas de Tela
-![Texto Alternativo](/caminho/para/a/imagem)
+        - O preço e a quantidade emitida pela bomba serão informados pelo cliente, também terão os dados conferidos pelo sensor, estes são enviados para uma API, que esta, calculará e enviará o valor correto para o aplicativo mobile.
 
 ## Pré-requisitos
 Para executar nosso projeto, é recomendado:
@@ -35,30 +32,45 @@ Para executar nosso projeto, é recomendado:
 - Acesso ao ThingsBoard Community ou ThingsBoard Cloud (recomendado para aplicações de curto prazo)
 
 ## Instalação
-- Copie este repositório com o comando `git clone --recurse-submodules https://github.com/RenanHS2RP/IoT_Window_squad3.git` em uma pasta que desejar usando o terminal.
+- Copie este repositório com o comando: 
+
+    `git clone --recurse-submodules https://github.com/RenanHS2RP/IoT_Window_squad3.git` 
+    
+    em uma pasta que desejar usando o terminal.
 
 - ### Frontend
     - [Instruções de instalação para o Frontend]
 
 - ### Backend
 - *Nota: O Backend está hospedado em: [sensorWindow.pythonanywhere.com](http://sensorwindow.pythonanywhere.com/api/), dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
-1. No terminal, navegue até o repositório com o comando `cd /IoT_Flow_squad3/codigo/back/FlowAPIProject`.
-2. Execute o comando `python manage.py makemigrations` para criar migrações.
-3. Execute o comando `python manage.py migrate` para migrar.
+1. No terminal, navegue até o repositório com o comando:
+
+    `cd /IoT_Flow_squad3/codigo/back/FlowAPIProject`.
+2. Execute o comando: `python manage.py makemigrations` para criar migrações.
+3. Execute o comando: `python manage.py migrate` para migrar.
 
 ## Inicialização
 - ### Frontend
     - [Instruções de inicialização para o Frontend]
 ### Backend
-- Execute o comando `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+- Execute o comando: `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## Uso
 ### Frontend
 - Em manutenção.
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/api/) ou [online](https://sensorwindow.pythonanywhere.com/api/), ao acessar a página será exibido três caminhos:
+
+![Tela inicial/root API](/assets/img1.0.png)
+
 - **Previsão** [[local]](http://127.0.0.1:8000/api/previsao/) [[online]](https://sensorwindow.pythonanywhere.com/api/previsao/): 
-    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `https://sensorwindow.pythonanywhere.com/api/previsao/1` ou `http://127.0.0.1:8000/api/previsao/1`.
+    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: 
+    
+        `https://sensorwindow.pythonanywhere.com/api/previsao/1` 
+        
+        ou 
+        
+        `http://127.0.0.1:8000/api/previsao/1`.
     - Para adicionar um JSON ao banco, pode-se ser adicionado pela interface gráfica. Na parte inferior, o campo "City name" indica o nome da cidade e uma vez fornecido o sistema ira entregar uma telemetria da previsão do tempo das próximas 72 horas.
     - Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
 ```JSON
@@ -66,8 +78,19 @@ Para executar nosso projeto, é recomendado:
     "city_name": "Sorocaba"
 }
 ```
+![Tela lista da API de Previsão](/assets/img2.0.png)
+![Tela input da API de Previsão](/assets/img2.0.png)
+![Tela de edição da API de Previsão](/assets/img2.0.png)
+
 - **Chuva** [[local]](http://127.0.0.1:8000/api/chuva/) [[online]](https://sensorwindow.pythonanywhere.com/api/chuva/): 
-    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `https://sensorwindow.pythonanywhere.com/api/chuva/1` ou `http://127.0.0.1:8000/api/chuva/1`.
+    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: 
+    
+        `https://sensorwindow.pythonanywhere.com/api/chuva/1` 
+        
+        ou 
+        
+        `http://127.0.0.1:8000/api/chuva/1`.
+        
     - Para adicionar um JSON ao banco, pode-se ser adicionado pela interface gráfica. Na parte inferior, o campo: Is raining demontra se esta ocorrendo chuva e o sensor envia um sinal quando o estado é alterado.
     - Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
 ```JSON
@@ -75,8 +98,19 @@ Para executar nosso projeto, é recomendado:
     "is_raining": true
 }
 ```
+![Tela lista da API de Chuva](/assets/img3.0.png)
+![Tela input da API de Chuva](/assets/img3.1.png)
+![Tela de edição da API de Chuva](/assets/img3.2.png)
+
 - **Luminosidade** [[local]](http://127.0.0.1:8000/api/luminosidade/) [[online]](https://sensorwindow.pythonanywhere.com/api/luminosidade/): 
-    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: `https://sensorwindow.pythonanywhere.com/api/luminosidade/1` ou `http://127.0.0.1:8000/api/luminosidade/1`.
+    - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: 
+    
+        `https://sensorwindow.pythonanywhere.com/api/luminosidade/1` 
+        
+        ou 
+        
+        `http://127.0.0.1:8000/api/luminosidade/1`.
+
     - Para adicionar um JSON ao banco, pode-se ser adicionado pela interface gráfica. Na parte inferior, o campo: lux representa o quanto de lux o sensor captou e envia como mais um dos dados para determinar se esta ou não chovendo.
     - Também há outros dois modos de envio, ambos por JSON. Na aba Raw data, pode ser enviado um JSON ou, caso já tenha um maior conhecimento sobre ferramentas auxiliares como Postman, pode ser feita esta inserção com JSON. Um exemplo de inserção através deste método:
 ```JSON
@@ -84,3 +118,6 @@ Para executar nosso projeto, é recomendado:
     "lux": 1000
 }
 ```
+![Tela lista da API de Luminosidade](/assets/img4.0.png)
+![Tela input da API de Luminosidade](/assets/img4.1.png)
+![Tela de edição da API de Luminosidade](/assets/img4.2.png)
