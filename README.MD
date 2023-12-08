@@ -79,8 +79,8 @@ Para executar nosso projeto, é recomendado:
 }
 ```
 ![Tela lista da API de Previsão](/assets/img2.0.png)
-![Tela input da API de Previsão](/assets/img2.0.png)
-![Tela de edição da API de Previsão](/assets/img2.0.png)
+![Tela input da API de Previsão](/assets/img2.1.png)
+![Tela de edição da API de Previsão](/assets/img2.2.png)
 
 - **Chuva** [[local]](http://127.0.0.1:8000/api/chuva/) [[online]](https://sensorwindow.pythonanywhere.com/api/chuva/): 
     - Nestas URLs serão exibidos métodos para listar (GET) e inserir (POST). Se desejar deletar (DELETE) ou atualizar (PUT), será necessário uma busca específica, basta adicionar o ID do JSON escolhido no final da URL, exemplo: 
