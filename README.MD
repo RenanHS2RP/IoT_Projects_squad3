@@ -3,7 +3,6 @@
 ## Índice
 - [Descrição](#descrição)
 - [Projetos](#projetos)
-- [Capturas de Tela](#capturas-de-tela)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
 - [Inicialização](#inicialização)
@@ -18,7 +17,7 @@ Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SE
         - O projeto "Janela Automática" tem como objetivo automatizar uma janela, tomando ações com base nas condições climáticas. Se a previsão indicar alta probabilidade de chuva e ela realmente ocorrer, a janela será fechada; caso contrário, ela será aberta.
         - Para isso, sensores de umidade e dados de previsão do tempo de uma API externa serão utilizados. Um painel no ThingsBoard exibirá gráficos relacionados à probabilidade de chuva, histórico de aberturas e fechamentos, além de alertas sobre o estado da janela.
 
-- ### [Sensor de Combustível](https://github.com/seu-usuario/sua-repo)
+- ### [Sensor de Combustível](https://github.com/RenanHS2RP/IoT_Flow_squad3.git)
     - *Descrição do Projeto:*
         - O projeto "Sensor de Combustível" tem como finalidade considerar o preço pago e a quantidade de combustível emitido pela bomba, comparando com o que foi realmente recebido e o preço correto de acordo com o posto.
         - O preço e a quantidade emitida pela bomba serão informados pelo cliente, também terão os dados conferidos pelo sensor, estes são enviados para uma API, que esta, calculará e enviará o valor correto para o aplicativo mobile.
@@ -28,8 +27,8 @@ Para executar nosso projeto, é recomendado:
 - Acesso à um computador ou laptop
 - Uma IDE como Visual Studio Code
 - Conhecimento básico em terminais
-- Conhecimento básico em envio de JSON (back)
-- Acesso ao ThingsBoard Community ou ThingsBoard Cloud (recomendado para aplicações de curto prazo)
+- Conhecimento básico em envio de JSON
+- Ter um celular com câmera e Expo Go instalado
 
 ## Instalação
 - Copie este repositório com o comando: 
@@ -38,26 +37,35 @@ Para executar nosso projeto, é recomendado:
     
     em uma pasta que desejar usando o terminal.
 
-- ### Frontend
-    - [Instruções de instalação para o Frontend]
+### Frontend
+1. No terminal, navegue até o repositório com o comando:
 
-- ### Backend
+    `cd /IoT_Window_squad3/codigo/front/window_mobile`.
+    
+2. Execute o comando: `npm i` para baixar todas as dependências do projeto
+
+### Backend
 - *Nota: O Backend está hospedado em: [sensorWindow.pythonanywhere.com](http://sensorwindow.pythonanywhere.com/api/), dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
 1. No terminal, navegue até o repositório com o comando:
 
-    `cd /IoT_Flow_squad3/codigo/back/FlowAPIProject`.
+    `cd /IoT_Window_squad3/codigo/back/window_api`.
 2. Execute o comando: `python manage.py makemigrations` para criar migrações.
 3. Execute o comando: `python manage.py migrate` para migrar.
 
 ## Inicialização
-- ### Frontend
-    - [Instruções de inicialização para o Frontend]
+### Frontend
+- Para iniciar a interface, execute o comando `npx expo start`. Um código QR será gerado, e ao escaneá-lo com a câmera, a página da interface será aberta utilizando o Expo Go.
+
 ### Backend
 - Execute o comando: `python manage.py runserver` para iniciar a API em: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 ## Uso
 ### Frontend
-- Em manutenção.
+- Após aguardar o carregamento, a interface será mostrada, contendo a cidade, data, temperatura, umidade, estado da janela e uma previsão futura.
+
+- Onde os componentes relacionados à telemetria, como temperatura, umidade e previsão futura, recebem dados telemetricos de uma fonte externa.
+
+- A janela na aplicação possui dados coletados do sensor físico, informando se a janela está aberta ou fechada.
 ### Backend
 - Tanto no host [local](http://127.0.0.1:8000/api/) ou [online](https://sensorwindow.pythonanywhere.com/api/), ao acessar a página será exibido três caminhos:
 
