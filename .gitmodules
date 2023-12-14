@@ -1,9 +1,6 @@
 [submodule "codigo/back/window_api"]
 	path = codigo/back/window_api
 	url = https://github.com/RafaelRodrigues44/window_api.git
-[submodule "window_mobile"]
-	path = window_mobile
-	url = https://github.com/AnaJuliaMM/window_mobile.git
 [submodule "codigo/front/window_mobile"]
 	path = codigo/front/window_mobile
 	url = https://github.com/AnaJuliaMM/window_mobile.git
