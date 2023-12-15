@@ -8,6 +8,8 @@
 - [Inicialização](#inicialização)
 - [Uso](#uso)
 
+## [Video Pitch](https://drive.google.com/file/d/18ganIz8a1jjjFHAK3TiIJe5Cq9LZXCPS/view?usp=sharing)
+
 ## Descrição
 Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SENAI Gaspar Ricardo Jr. com o objetivo de criar uma integração com dois projetos da turma de Mecatrônica. Isso resultou na criação de uma interface, uma API e uma integração específica para cada projeto.
 
@@ -129,3 +131,4 @@ Para executar nosso projeto, é recomendado:
 ![Tela lista da API de Luminosidade](/assets/img4.0.png)
 ![Tela input da API de Luminosidade](/assets/img4.1.png)
 ![Tela de edição da API de Luminosidade](/assets/img4.2.png)
+
