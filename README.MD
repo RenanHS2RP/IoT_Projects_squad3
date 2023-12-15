@@ -39,10 +39,12 @@ Para executar nosso projeto, é recomendado:
     
     em uma pasta que desejar usando o terminal.
 
+- Se desejar examinar o código após clonar, acesse o repositório usando `cd .\IoT_Window_squad3\` e, em seguida, execute `code .`. É necessário ter uma IDE como o VS Code para executar esse comando. Além disso, caso escolha seguir esse método, remova `\IoT_Window_squad3` dos comandos a seguir.
+
 ### Frontend
 1. No terminal, navegue até o repositório com o comando:
 
-    `cd /IoT_Window_squad3/codigo/front/window_mobile`.
+    `cd .\IoT_Window_squad3\codigo\front\window_mobile\`.
     
 2. Execute o comando: `npm i` para baixar todas as dependências do projeto
 
@@ -50,7 +52,7 @@ Para executar nosso projeto, é recomendado:
 - *Nota: O Backend está hospedado em: [sensorWindow.pythonanywhere.com](http://sensorwindow.pythonanywhere.com/api/), dezembro de 2023, não é efetivamente necessário rodar a API localmente para interagir com ela.*
 1. No terminal, navegue até o repositório com o comando:
 
-    `cd /IoT_Window_squad3/codigo/back/window_api`.
+    `cd .\IoT_Window_squad3\codigo\back\window_api\`.
 2. Execute o comando: `python manage.py makemigrations` para criar migrações.
 3. Execute o comando: `python manage.py migrate` para migrar.
 
