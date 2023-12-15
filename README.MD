@@ -8,7 +8,7 @@
 - [Inicialização](#inicialização)
 - [Uso](#uso)
 
-## [Video Pitch](https://drive.google.com/file/d/18ganIz8a1jjjFHAK3TiIJe5Cq9LZXCPS/view?usp=sharing)
+## [Video Pitch](https://drive.google.com/file/d/1Ro-5w4sYws5nh4RLeZA1CNZMtlApkwUa/view?usp=sharing)
 
 ## Descrição
 Este é um projeto realizado pela turma de ADS da Escola e Faculdade Técnica SENAI Gaspar Ricardo Jr. com o objetivo de criar uma integração com dois projetos da turma de Mecatrônica. Isso resultou na criação de uma interface, uma API e uma integração específica para cada projeto.
